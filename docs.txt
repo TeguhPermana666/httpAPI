@@ -1,0 +1,19 @@
+# HTTP
+- Digunakan untuk melakukan request dan response pada layanan server HTTP
+- HTTP : Http dan Https
+    - Https : Lebih secure di bandingkan Http dikarenakan https membuat request melalui TLS/SSL
+
+- method used to send Http request have a stream based API
+    - Stream menggunakan konsep event emitters (merespons data yang datang dari stream/events)
+
+1. Making a "GET Request"
+- GET request : retrieve data from web servers
+    - Commonly retrieve a JSON array dari user profiles (CRUD case)
+- Pada https terdapat 2 function to make GET request
+    - get() => yang hanya bisa membuat GET request
+    - request() => yang bisa membuat jenis request yang lain
+
+2. Making a Post Request
+- Upload data to a server or want the server to create data for client(me)
+    - typically send a POST request. In this section, u'ill create a POST request
+    in nodeJS. Case: create a new user in the user's API
